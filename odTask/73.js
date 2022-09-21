@@ -97,11 +97,12 @@ if (netArrs.length == 0) {
   netArrs.sort((a, b) => {
     let aa = a[0] * a[0] + a[1] * a[1];
     let bb = b[0] * b[0] + b[1] * b[1];
-    if (bb >= aa) {
-      return 1
-    } else {
-      return -1
-    }
+    return aa - bb
+    // if (bb >= aa) {
+    //   return 1
+    // } else {
+    //   return -1
+    // }
   })
   console.log(netArrs);
   console.log(`(${netArrs[0][0]},${netArrs[0][1]})`)
